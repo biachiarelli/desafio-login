@@ -1,0 +1,33 @@
+.Thermometer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+
+    &-local {
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: $dark-gray;
+        display: block;
+    }
+
+    &-group {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+
+        &__image {
+            width: 34px;
+        }
+
+        &__temperature {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 61px;
+            color: $dark-gray;
+        }
+    }
+}
+
+

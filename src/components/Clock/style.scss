@@ -1,0 +1,19 @@
+.Clock {
+    display: flex;
+    flex-direction: column;
+
+    &-time {
+        font-weight: 700;
+        font-size: 144px;
+        text-align: center;
+        color: $dark-gray;
+        display: block;
+    }
+
+    &-day {
+        font-size: 14px;
+        text-align: center;
+        color: $dark-gray;
+        display: block;
+    }
+}

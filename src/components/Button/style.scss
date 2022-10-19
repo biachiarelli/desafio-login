@@ -1,0 +1,11 @@
+.Button {
+    border: none;
+    background: linear-gradient(90deg, $red-2 0%, $red-1 100%);
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 22px;
+    width: 100%;
+}

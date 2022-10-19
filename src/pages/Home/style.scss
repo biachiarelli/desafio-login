@@ -1,0 +1,165 @@
+.Home {
+    position: relative;
+    min-height: 100vh;
+
+    &-menu {
+        padding: 25px 40px;
+        display: flex;
+        justify-content: space-between;
+        @include max-md {
+           padding: 16px;
+        }
+
+
+        @include max-md {
+            padding: 0;
+            flex-direction: column;
+            gap: 16px;
+            align-items: center;
+        }
+
+        &__logo {
+            height: 49px;
+            @include max-md {
+                height: auto;
+                width: 200px;
+            }
+        }
+    }
+
+    &-text {
+        padding-right: 134px;
+        padding-left: 330px;
+        padding-bottom: 120px;
+
+        @include max-md {
+            padding: 32px 16px;
+        }
+
+        &__group {
+            .title {
+                color: $red-1;
+                font-size: 64px;
+                line-height: 81px;
+                font-weight: 700;
+                text-align: right;
+                display: block;
+
+                &.small {
+                    font-size: 36px;
+                    line-height: 46px;
+                }
+            }
+
+            .text {
+                display: block;
+                font-size: 24px;
+                line-height: 30px;
+                text-align: right;
+                color: $dark-gray;
+            }
+        }
+    }
+
+    &-image {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 72%;
+        max-height: 520px;
+
+        @include max-md {
+            display: none;
+        }
+    }
+
+    &-footer {
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);
+        height: 100px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+
+        @include max-md {
+            position: relative;
+            flex-direction: column;
+            height: auto;
+        }
+
+        &__text {
+            font-size: 12px;
+            line-height: 15px;
+            text-align: right;
+            color: $white;
+            width: 30%;
+            padding-right: 35px;
+            margin: 123px;
+            border-right: 1px solid $white;
+            display: flex;
+            height: 60%;
+            align-items: center;
+            justify-content: center;
+            margin-left: 24%;
+
+            @include max-md {
+                margin: 0;
+                display: block;
+                height: auto;
+                width: 100%;
+                border: none;
+                padding: 24px 16px 0;
+            }
+        }
+
+        &__buttons {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            display: flex;
+
+            @include max-md {
+                position: relative;
+                height: 60px;
+                width: 100%;
+            }
+
+            .primary-button {
+                background: $white;
+                font-size: 12px;
+                line-height: 15px;
+                text-align: center;
+                color: $orange;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 131px;
+                cursor: pointer;
+
+                @include max-md {
+                    width: 50%;
+                }
+            }
+
+            .secondary-button {
+                font-size: 12px;
+                line-height: 15px;
+                text-align: center;
+                color: $white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 128px;
+                cursor: pointer;
+
+                @include max-md {
+                    width: 50%;
+                }
+
+            }
+        }
+    }
+}

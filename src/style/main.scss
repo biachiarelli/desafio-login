@@ -3,7 +3,12 @@
 @import "./global";
 
 //components
-
+@import "../components/Button/style.scss";
+@import "../components/Clock/style.scss";
+@import "../components/Input/style.scss";
+@import "../components/RefreshTime/style.scss";
+@import "../components/Thermometer/style.scss";
+@import "../components/Clock/style.scss";
 //pages
 @import "../pages/Home/style.scss";
 @import "../pages/Login/style.scss";
